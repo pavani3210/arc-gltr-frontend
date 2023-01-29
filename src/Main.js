@@ -47,8 +47,8 @@ export default function Main(props) {
                     <h2 className='m-0'>Upload your files</h2>
                     <p  className='m-0' style={{color:"#C4C4C4", marginTop:"5px"}}>File should be txt, docx, doc, pdf</p>
                     <label className="btn btn-default p-0">
-                        <input style={{display:"none"}} type="file" multiple onChange={selectFiles} accept=".doc, .docx,.txt,.pdf"/>
-                        <div className='card-inner' style={{fontSize:"14px"}} multiple onChange={selectFiles} accept=".doc, .docx,.txt,.pdf"  >
+                        <input style={{display:"none"}} type="file" multiple onChange={selectFiles} accept=".doc, .docx,.txt,.pdf, .zip"/>
+                        <div className='card-inner' style={{fontSize:"14px"}} multiple onChange={selectFiles} accept=".doc, .docx,.txt,.pdf, .zip"  >
                             <img style={{color:"#6696F1"}} width="50px" src={Upload} alt='upload'/>
                             <p  className='m-0' style={{color:"#C4C4C4", marginTop:"5px"}}>Click here to select photos</p>
                         </div>
