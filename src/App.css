@@ -48,6 +48,7 @@ body{
   align-items: center;
   justify-content: center;
   height: 100vh;
+  background-color: #363636;
 }
 
 
@@ -71,9 +72,9 @@ body{
   justify-content: center;
   border-radius: 30px;
   height: 200px;
-  background-color: #FBFCFE;
+  background-color: #ebebeb78;
   margin-top: 20px;
-  border: dashed 1.5px #BBC9E3;
+  border: dashed 2px #93bcfb;
   border-radius: 30px;
 }
 
