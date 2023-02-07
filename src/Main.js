@@ -11,7 +11,7 @@ export default function Main(props) {
     const [complete, setComplete] = React.useState(false)
     const [msg, setMsg] = React.useState("Report Downloaded Successfully ✅")
     const uploadFiles = () => {
-        upload('http://127.0.0.1:5001/upload', selectedFiles);
+        upload('http://localhost:5001/upload', selectedFiles);
     }
 
     async function upload(url, attachments) {
@@ -35,7 +35,7 @@ export default function Main(props) {
                 setMsg("Report Downloaded Successfully ✅");
                 var myVar = setTimeout(()=>{
                     setMsg("Something went wrong");
-                    window.location.reload();
+                    // window.location.reload();
                     setComplete(false);
                     clearTimeout(myVar);
                 }, 4500);
@@ -48,7 +48,7 @@ export default function Main(props) {
             setMsg("Something went wrong");
             setComplete(true);
             var myVar = setTimeout(()=>{
-                window.location.reload();
+                // window.location.reload();
                 setComplete(false);
                 clearTimeout(myVar);
             }, 4500);
@@ -79,7 +79,7 @@ export default function Main(props) {
             <div className='container'>
                 <div className='card'>
                     <h2 className='m-0'>Upload your files</h2>
-                    <p  className='m-0' style={{color:"#C4C4C4", marginTop:"5px"}}>File should be txt, docx, doc, pdf</p>
+                    <p  className='m-0' style={{color:"#C4C4C4", marginTop:"5px"}}>File should be txt, docx, doc, pdf, zip</p>
                     <label className="btn btn-default p-0">
                         <input style={{display:"none"}} type="file" multiple onChange={selectFiles} accept=".doc, .docx,.txt,.pdf, .zip"/>
                         <div className='card-inner' style={{fontSize:"14px"}} multiple onChange={selectFiles} accept=".doc, .docx,.txt,.pdf, .zip"  >
